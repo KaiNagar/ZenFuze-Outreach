@@ -12,7 +12,6 @@ export const CallInfo = () => {
 
   const loadUser = () => {
     const user = zfoService.getUser('Kai Nagar')
-    console.log(user)
     setUser(user)
   }
 
