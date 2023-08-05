@@ -1,15 +1,46 @@
-.call-info{
-    max-width: 500px;
-    .call-info-sec-1{
-
+.call-info {
+  max-width: 50%;
+  margin-left: 2rem;
+  font-size: rem(18px);
+  .call-info-sec-1 {
+    .call-info-sub-header {
+      font-size: rem(22px);
+      font-family: montserrat-bold;
+      color: $clr-SDark;
+      margin-top: 1.5rem;
     }
-    .call-info-sub-header{
-
+    .call-info-header {
+      font-size: rem(37px);
+      font-family: montserrat-bold;
     }
-    .call-info-header{
-
+    .sec-1-text-1 {
+      margin-top: 1.5rem;
+      max-width: 90%;
     }
-    .sec-1-text-1{
-        
+    .sec-1-text-2 {
+      margin-top: 1.5rem;
+      max-width: 90%;
     }
+  }
+  .call-info-sec-2 {
+    .call-sec-2-header {
+      font-size: rem(22px);
+      font-family: montserrat-bold;
+      color: $clr-SDark;
+      margin-top: 1.5rem;
+    }
+    ul {
+      li {
+        margin-top: 0.5rem;
+      }
+    }
+    .check-icon {
+      margin-right: 0.2rem;
+      width: 20px;
+      align-self: center;
+    }
+    .highlighted {
+      font-family: montserrat-bold;
+    }
+  }
 }

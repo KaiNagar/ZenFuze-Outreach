@@ -1,3 +1,5 @@
+import { Link } from 'react-scroll'
+
 export const Hero = () => {
   return (
     <section className='hero-container'>
@@ -16,12 +18,12 @@ export const Hero = () => {
               blow up your sales.
             </p>
           </div>
-          <div className='book-call-btn flex column'>
-            <span className="btn-big-text">Speak To Our Team Today</span>
+          <Link className='book-call-btn flex column' to='book-a-call' smooth={true} offset={0} duration={200}>
+            <span className='btn-big-text'>Speak To Our Team Today</span>
             <span className='btn-small-text'>
               Schedule Your FREE Audit Call Now
             </span>
-          </div>
+          </Link>
         </div>
         <div className='hero-img flex column align-center space-between'>
           <img
