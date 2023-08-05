@@ -1,0 +1,38 @@
+.hero-container {
+  background-image: url('https://res.cloudinary.com/db9bey3ot/image/upload/v1691165729/Background_Flip_tvvrft.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  font-size: rem(35px);
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  position: relative;
+  overflow-x: hidden;
+  .hero-introduction {
+    width: 50%;
+    align-items: flex-start;
+    .intro-text {
+      font-size: rem(39px);
+      .intro-header {
+        color: $clr-SDark;
+        font-family: montserrat-bold;
+      }
+      .intro-sub-text {
+        font-size: rem(20px);
+        color: $clr-white;
+        margin-top: 1rem;
+      }
+    }
+
+    .book-call-btn {
+      @include call-to-action-btn;
+    }
+  }
+
+  .hero-img {
+    width: 50%;
+    .hero-img-text {
+      font-family: montserrat-bold;
+      color: $clr-white;
+    }
+  }
+}

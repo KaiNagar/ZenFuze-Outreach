@@ -1,0 +1,19 @@
+.app-header-constainer {
+  background-color: lightblue;
+
+  .app-header {
+    background-color: $clr-MDark;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 20px;
+    .logo{
+      color: $clr-white;
+      font-size: rem(34px);
+      font-family: montserrat-bold;
+    }
+    .logo-outreach{
+      font-family: montserrat-light;
+    }
+  }
+}
