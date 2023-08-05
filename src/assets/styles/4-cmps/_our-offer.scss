@@ -9,8 +9,6 @@
   }
 
   .offer-info {
-    width: 50%;
-    padding:3rem 0;
     align-items: flex-start;
     .what-we-offer-header {
       font-size: rem(22px);
@@ -20,18 +18,14 @@
       font-family: montserrat-bold;
       color: $clr-SDark;
     }
-    .offer-sub-header,.offer-text-1,.offer-text-2 {
+    .offer-sub-header,
+    .offer-text-1,
+    .offer-text-2 {
       font-size: rem(18px);
       margin-top: 1rem;
     }
-    
-    .book-call-btn {
-      @include call-to-action-btn;
-      
-    }
   }
   .not-offer-info {
-    width: 50%;
     margin-left: 3rem;
     .not-offer-header {
       font-family: montserrat-bold;
@@ -40,7 +34,7 @@
     .not-offer-sub-header {
       font-size: rem(26px);
     }
-    .highlighted{
+    .highlighted {
       font-style: italic;
     }
     ul {
@@ -56,5 +50,43 @@
     .x-icon {
       margin-right: 0.5rem;
     }
+  }
+}
+
+// mobile
+@media screen and (max-width: 1070px) {
+  .our-offer {
+    flex-direction: column-reverse;
+  }
+  .offer-info {
+    padding: 0;
+    max-width: 350px;
+    .book-call-btn {
+      @include call-to-action-btn;
+      font-size: rem(16px);
+      align-self: center;
+      margin-bottom: 3rem;
+      .btn-small-text {
+        font-size: rem(12px);
+      }
+    }
+  }
+  .not-offer-info {
+    max-width: 350px;
+    padding-bottom: 2rem;
+  }
+}
+// desktop
+@media screen and (min-width: 1070px) {
+  .offer-info {
+    width: 50%;
+
+    padding: 3rem 0;
+    .book-call-btn {
+      @include call-to-action-btn;
+    }
+  }
+  .not-offer-info {
+    width: 50%;
   }
 }

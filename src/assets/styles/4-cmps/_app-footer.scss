@@ -2,39 +2,80 @@
   background-image: url('https://res.cloudinary.com/db9bey3ot/image/upload/v1691154819/Background_y2pynq.png');
   background-repeat: no-repeat;
   .app-footer {
-    min-height: 600px;
-    color: $clr-white;
     text-align: center;
-    .inquiry-header{
-      font-size: rem(60px);
+    .inquiry-header {
       color: $clr-SDark;
       font-family: montserrat-bold;
     }
-    .inquiry-text{
+    .inquiry-text {
       max-width: 900px;
-      font-size: rem(24px);
     }
-    .book-call-btn{
-      @include call-to-action-btn;
-      margin-bottom: 4rem;
-    }
-    .rights-section{
-      .logo{
+    .rights-section {
+      .logo {
         color: $clr-white;
-        font-size: rem(34px);
         font-family: montserrat-bold;
       }
-      .logo-outreach{
+      .logo-outreach {
         font-family: montserrat-light;
       }
-      h6{
-        font-size: rem(16px);
-        margin: 0.5rem;
-      }
-      .copy-rights{
-        font-size: rem(16px);
-        margin: 0.5rem;
-      }
+      
+       
     }
   }
+}
+// mobile
+@media screen and (max-width: 1070px) {
+  .app-footer {
+    min-height: 400px;
+    color: $clr-white;
+  }
+
+  .inquiry-header {
+    font-size: rem(28px);
+    margin-bottom: 0.5rem
+  }
+  .book-call-btn {
+    @include call-to-action-btn;
+    font-size: rem(16px);
+    align-self: center;
+    margin-bottom: 2rem;
+    .btn-small-text {
+      font-size: rem(12px);
+    }
+  }
+  .inquiry-text {
+    font-size: rem(18px);
+  }
+  .logo {
+    font-size: rem(26px);
+  }
+  h6,.copy-rights {
+    font-size: rem(12px);
+    margin: 0.5rem;
+  }
+}
+// desktop
+@media screen and (min-width: 1070px) {
+  .app-footer {
+    min-height: 600px;
+    color: $clr-white;
+  }
+  .inquiry-header {
+    font-size: rem(60px);
+  }
+  .book-call-btn {
+    @include call-to-action-btn;
+    margin-bottom: 4rem;
+  }
+  h6,.copy-rights {
+    font-size: rem(16px);
+    margin: 0.5rem;
+  }
+  .logo {
+    font-size: rem(34px);
+  }
+  .inquiry-text {
+    font-size: rem(24px);
+  }
+  
 }

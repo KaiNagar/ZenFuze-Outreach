@@ -1,5 +1,4 @@
 .call-info {
-  max-width: 50%;
   margin-left: 2rem;
   font-size: rem(18px);
   .call-info-sec-1 {
@@ -42,5 +41,19 @@
     .highlighted {
       font-family: montserrat-bold;
     }
+  }
+}
+
+// mobile
+@media screen and (max-width: 1070px) {
+  .call-info {
+    margin-bottom: 2rem;
+    max-width: 350px;
+  }
+}
+// desktop
+@media screen and (min-width: 1070px) {
+  .call-info {
+    max-width: 50%;
   }
 }

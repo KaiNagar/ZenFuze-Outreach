@@ -2,13 +2,12 @@
   background-image: url('https://res.cloudinary.com/db9bey3ot/image/upload/v1691165729/Background_Flip_tvvrft.png');
   background-position: top;
   background-repeat: no-repeat;
-  font-size: rem(35px);
   padding-top: 3rem;
   padding-bottom: 5rem;
   position: relative;
   overflow-x: hidden;
   .hero-introduction {
-    width: 50%;
+    // width: 50%;
     align-items: flex-start;
     .intro-text {
       font-size: rem(39px);
@@ -23,16 +22,66 @@
       }
     }
 
-    .book-call-btn {
-      @include call-to-action-btn;
-    }
+    
   }
 
   .hero-img {
-    width: 50%;
     .hero-img-text {
       font-family: montserrat-bold;
+    }
+  }
+}
+// mobile
+@media screen and (max-width: 1070px) {
+  .hero-container{
+    text-align: center;
+    font-size: rem(20px);
+    padding-bottom: 0rem;
+  }
+  .hero{
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-introduction{
+    max-width: 350px;
+  }
+  .hero-img{
+    max-width: 350px;
+    .hero-img-text {
+      color: $clr-SDark;
+      font-size: rem(30px)
+    }
+  }
+  .book-call-btn {
+    @include call-to-action-btn;
+    font-size: rem(16px);
+    align-self: center;
+    margin-bottom: 3rem;
+    .btn-small-text{
+      font-size: rem(12px);
+
+    }
+  }
+}
+// desktop
+@media screen and (min-width: 1070px) {
+  .hero-container{
+    font-size: rem(35px);
+
+  }
+  .hero{
+    flex-direction: row;
+  }
+  .hero-introduction{
+    width: 50%;
+  }
+  .hero-img{
+    width: 50%;
+    .hero-img-text {
       color: $clr-white;
     }
+  }
+  .book-call-btn {
+    @include call-to-action-btn;
   }
 }

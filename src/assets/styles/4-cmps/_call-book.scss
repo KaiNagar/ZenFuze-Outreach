@@ -1,0 +1,16 @@
+// mobile
+@media screen and (max-width: 1070px) {
+  .call-book {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .calendly-inline-widget{
+    max-width: 350px;
+    min-height: 1050px;
+  }
+}
+// desktop
+@media screen and (min-width: 1070px) {
+  .call-book {
+  }
+}
