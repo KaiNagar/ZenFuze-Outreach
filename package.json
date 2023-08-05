@@ -1,6 +1,6 @@
 {
   "name": "react-proj",
-  "home": "https://KaiNagar.github.io/ZenFuze-Outreach",
+  "homepage": "https://KaiNagar.github.io/ZenFuze-Outreach",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
