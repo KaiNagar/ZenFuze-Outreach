@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.3ecedf79.css",
-    "main.js": "/static/js/main.29d28f12.js",
-    "static/media/Montserrat-Bold.ttf": "/static/media/Montserrat-Bold.2c155811b35513d5beaa.ttf",
-    "static/media/Montserrat-Light.ttf": "/static/media/Montserrat-Light.6fcc9263a21be961d246.ttf",
-    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
-    "index.html": "/index.html",
-    "main.3ecedf79.css.map": "/static/css/main.3ecedf79.css.map",
-    "main.29d28f12.js.map": "/static/js/main.29d28f12.js.map"
+    "main.css": "/ZenFuze-Outreach/static/css/main.7f8d9fb2.css",
+    "main.js": "/ZenFuze-Outreach/static/js/main.29d28f12.js",
+    "static/media/Montserrat-Bold.ttf": "/ZenFuze-Outreach/static/media/Montserrat-Bold.2c155811b35513d5beaa.ttf",
+    "static/media/Montserrat-Light.ttf": "/ZenFuze-Outreach/static/media/Montserrat-Light.6fcc9263a21be961d246.ttf",
+    "static/media/Montserrat-Regular.ttf": "/ZenFuze-Outreach/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
+    "index.html": "/ZenFuze-Outreach/index.html",
+    "main.7f8d9fb2.css.map": "/ZenFuze-Outreach/static/css/main.7f8d9fb2.css.map",
+    "main.29d28f12.js.map": "/ZenFuze-Outreach/static/js/main.29d28f12.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ecedf79.css",
+    "static/css/main.7f8d9fb2.css",
     "static/js/main.29d28f12.js"
   ]
 }
