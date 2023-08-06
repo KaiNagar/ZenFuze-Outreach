@@ -2,7 +2,7 @@ import { Link } from 'react-scroll'
 
 export const AppFooter = () => {
   return (
-    <section className='app-footer-container'>
+    <footer className='app-footer-container'>
       <div className='app-footer container flex column align-center justify-center'>
         <h1 className='inquiry-header'>Have A General Inquiry?</h1>
         <h4 className='inquiry-text'>
@@ -31,6 +31,6 @@ export const AppFooter = () => {
           </span>
         </div>
       </div>
-    </section>
+    </footer>
   )
 }

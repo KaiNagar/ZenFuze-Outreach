@@ -30,7 +30,7 @@ export const Hero = () => {
             src='https://res.cloudinary.com/db9bey3ot/image/upload/v1691152004/image-removebg-preview_1_kcp3g7.png'
             alt='ZenFuze Logo'
           />
-          <h2 className='hero-img-text'>ZenFuze Outreach</h2>
+          <span className="logo">ZenFuze <span className='logo-outreach'>Outreach</span></span>
         </div>
       </div>
     </section>

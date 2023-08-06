@@ -4,10 +4,10 @@ import { OurOffer } from "../cmps/OurOffer"
 
 export const Home = () => {
     return (
-        <section className="home-page">
+        <main className="home-page">
             <Hero />
             <OurOffer />
             <CallBook />
-        </section>
+        </main>
     )
 }
