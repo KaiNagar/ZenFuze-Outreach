@@ -7,13 +7,53 @@
     padding-left: 10px;
     padding-right: 10px;
     padding: 20px;
-    .logo{
+    .logo {
       color: $clr-white;
       font-size: rem(34px);
       font-family: montserrat-bold;
     }
-    .logo-outreach{
+    .logo-outreach {
       font-family: montserrat-light;
+    }
+    .dropdown-languages {
+      position: relative;
+    }
+    .language-drop-btn {
+      font-size: rem(18px);
+      color: $clr-white;
+      font-family: montserrat-bold;
+      background-color: transparent;
+      border: none;
+      &:hover{
+        opacity: 0.8;
+      }
+    }
+    ul {
+      position: absolute;
+      z-index: 1;
+      top: -500px;
+      font-size: rem(18px);
+      background-color: $clr-secondary;
+      padding: 0.5rem;
+      border-radius: rem(4px);
+      border: 2px solid $clr-border;
+      transition: all 0.4s;
+      &.open {
+        top: 2rem;
+      }
+      .dropdown-item {
+        color: $clr-white;
+        font-family: montserrat-bold;
+        margin-top: 0.5rem;
+        cursor: pointer;
+      }
+      .country-logo {
+        img {
+          min-width: 40px;
+          width: 40px;
+          margin: 0 1rem;
+        }
+      }
     }
   }
 }

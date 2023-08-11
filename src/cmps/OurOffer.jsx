@@ -1,16 +1,18 @@
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-scroll'
 
 export const OurOffer = () => {
+  const {t} = useTranslation()
   return (
     <section className='our-offer-container'>
       <div className='our-offer container flex align-center'>
         <div className='not-offer-info'>
           <h1 className='not-offer-header'>
-            Mastery Demands Extreme Focus so...
+            {t('our_offer_not_offer_header')}
           </h1>
           <h1 className='not-offer-sub-header'>
-            We don't offer any other services except for{' '}
-            <span className='highlighted'>paid advertising...</span>
+          {t('our_offer_not_offer_sun_header_1')}{' '}
+            <span className='highlighted'>{t('our_offer_not_offer_sun_header_2')}</span>
           </h1>
           <ul className='clean-list'>
             <li>
@@ -19,7 +21,7 @@ export const OurOffer = () => {
                 alt=''
                 className='x-icon'
               />
-              Web Design
+              {t('our_offer_not_offer_list_web')}
             </li>
             <li>
               <img
@@ -27,7 +29,7 @@ export const OurOffer = () => {
                 alt=''
                 className='x-icon'
               />
-              Content Creation
+              {t('our_offer_not_offer_list_content')}
             </li>
             <li>
               <img
@@ -35,7 +37,7 @@ export const OurOffer = () => {
                 alt=''
                 className='x-icon'
               />
-              Email Marketing
+              {t('our_offer_not_offer_list_email')}
             </li>
             <li>
               <img
@@ -43,7 +45,7 @@ export const OurOffer = () => {
                 alt=''
                 className='x-icon'
               />
-              Social Media Management
+              {t('our_offer_not_offer_list_social')}
             </li>
             <li>
               <img
@@ -51,7 +53,7 @@ export const OurOffer = () => {
                 alt=''
                 className='x-icon'
               />
-              Instagram Growth
+              {t('our_offer_not_offer_list_instagram')}
             </li>
             <li>
               <img
@@ -59,24 +61,19 @@ export const OurOffer = () => {
                 alt=''
                 className='x-icon'
               />
-              PR Service
+              {t('our_offer_not_offer_list_pr_service')}
             </li>
           </ul>
         </div>
         <div className='offer-info flex column'>
-          <h1 className='what-we-offer-header'>What we offer</h1>
-          <h1 className='big-header'>Paid Advertising</h1>
-          <h4 className='offer-sub-header'>Ads, Just Ads.</h4>
+          <h1 className='what-we-offer-header'>{t('our_offer_offer_header')}</h1>
+          <h1 className='big-header'>{t('our_offer_offer_big_header')}</h1>
+          <h4 className='offer-sub-header'>{t('our_offer_offer_sub_header')}</h4>
           <p className='offer-text-1'>
-            We do one thing - and we do it with a monastic focus and better then
-            anyone else. If you want an agency that offers a full service
-            solution of everything that won't move the needle forward, then you
-            might want to look for a diffrent agency
+          {t('our_offer_offer_text_1')}
           </p>
           <p className='offer-text-2'>
-            If you want an agency where with tow clicks, you can get a clear
-            breakdown of how much was spent, how much was made & what your net
-            profit was - we are a perfect match for you.
+          {t('our_offer_offer_text_2')}
           </p>
           <Link
             className='book-call-btn flex column'
@@ -85,9 +82,9 @@ export const OurOffer = () => {
             offset={0}
             duration={200}
           >
-            <span className='btn-big-text'>Speak To Our Team Today</span>
+            <span className='btn-big-text'>{t('book_call_btn_big_txt')}</span>
             <span className='btn-small-text'>
-              Schedule Your FREE Audit Call Now
+            {t('book_call_btn_small_txt')}
             </span>
           </Link>
         </div>

@@ -1,13 +1,15 @@
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-scroll'
 
 export const AppFooter = () => {
+  const {t} = useTranslation()
+
   return (
     <footer className='app-footer-container'>
       <div className='app-footer container flex column align-center justify-center'>
-        <h1 className='inquiry-header'>Have A General Inquiry?</h1>
+        <h1 className='inquiry-header'>{t('footer_inquiry_header')}</h1>
         <h4 className='inquiry-text'>
-          If you have a general inquiry and would like to speak to our expert
-          team, you can contact us via email at: kainagar@zenfuzeoutreach.com
+        {t('footer_inquiry_text')}
         </h4>
         <Link
           className='book-call-btn flex column'
@@ -16,16 +18,16 @@ export const AppFooter = () => {
           offset={0}
           duration={200}
         >
-          <span className='btn-big-text'>Speak To Our Team Today</span>
+          <span className='btn-big-text'>{t('book_call_btn_big_txt')}</span>
           <span className='btn-small-text'>
-            Schedule Your FREE Audit Call Now
+          {t('book_call_btn_small_txt')}
           </span>
         </Link>
         <div className='rights-section'>
           <span className='logo'>
             ZenFuze <span className='logo-outreach'>Outreach</span>
           </span>
-          <h6>All Rights Reserved | All Wrongs Reserved also</h6>
+          <h6>{t('footer_rights_reserved')}</h6>
           <span className='copy-rights'>
             Copyrights &copy; from 2023 by Kai Nagar | ZenFuze Outreach
           </span>
