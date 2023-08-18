@@ -22,10 +22,24 @@
       font-size: rem(18px);
       color: $clr-white;
       font-family: montserrat-bold;
-      background-color: transparent;
+      background-color: $clr-secondary;
+      border-top-left-radius: rem(4px);
+      border-top-right-radius: rem(4px);
       border: none;
-      &:hover{
+      border-bottom: 1px solid $clr-border;
+      min-width: 158.3px;
+      padding: 0 0.5rem;
+      &:hover {
         opacity: 0.8;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .dropdown-arrow {
+        margin: 0 1rem;
+        padding-top: 0.4rem;
+        img {
+          width: 20px;
+        }
       }
     }
     ul {
@@ -35,11 +49,14 @@
       font-size: rem(18px);
       background-color: $clr-secondary;
       padding: 0.5rem;
-      border-radius: rem(4px);
-      border: 2px solid $clr-border;
+      border-bottom-left-radius: rem(4px);
+      border-bottom-right-radius: rem(4px);
+      // min-width: 150px;
       transition: all 0.4s;
       &.open {
         top: 2rem;
+        left: 0px;
+        // min-width: 150px;
       }
       .dropdown-item {
         color: $clr-white;

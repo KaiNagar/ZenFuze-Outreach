@@ -4,11 +4,12 @@
 // $clr-introBG: hsl(217, 28%, 15%);
 // $clr-testiBG: hsl(219, 30%, 18%);
 $clr-white: #fff;
+$clr-black: #000;
 $clr-border: #707070;
 $clr-Lgrey: #c0c0c0;
 $clr-grey: rgba(110, 103, 103, 0.5);
-$clr-main: #3B5585;
-$clr-secondary: #EAA159;
+$clr-main: #3b5585;
+$clr-secondary: #eaa159;
 $clr-MLight: lighten($clr-main, 60%);
 $clr-MDark: darken($clr-main, 20%);
 $clr-SLight: lighten($clr-secondary, 40%);
@@ -30,8 +31,3 @@ $padded-mobile-breakpoint: $mobile-breakpoint + $layoutPadding * 2;
 $padded-tablet-breakpoint: $tablet-breakpoint + $layoutPadding * 2;
 $padded-normal-breakpoint: $normal-breakpoint + $layoutPadding * 2;
 $padded-wide-breakpoint: $wide-breakpoint + $layoutPadding * 2;
-
-
-
-
-

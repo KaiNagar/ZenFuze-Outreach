@@ -13,7 +13,7 @@ export const CallInfo = () => {
   }, [])
 
   const loadUser = () => {
-    const user = zfoService.getUser('Kai Nagar')
+    const user = zfoService.getMember('Kai Nagar')
     setUser(user)
   }
 

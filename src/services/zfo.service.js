@@ -1,15 +1,29 @@
 export const zfoService = {
-    getAllUsers,
-    getUser,
+    getAllMembers,
+    getMember,
     getLanguages,
-    getLang
+    getLang,
+    getAllCompenies
 }
 
 const gUsers = [
     {
         username: 'Kai Nagar',
         imgUrl: 'https://res.cloudinary.com/db9bey3ot/image/upload/v1691168226/ProfilePic_a8vnxo.jpg',
-        Title: 'Founder'
+        title: 'Founder'
+    },
+    {
+        username: 'Adam Saya',
+        imgUrl: 'https://media.licdn.com/dms/image/C4D03AQGt-5QUsOUGKw/profile-displayphoto-shrink_800_800/0/1639257490935?e=1697673600&v=beta&t=e6c6jWL-woW5KcOtTuUkJvjlE4yH-t_l0U-ytXJSx0k',
+        title: 'Chief marketing officer'
+    },
+]
+
+const gCompanies = [
+    {
+        id: makeId(),
+        name: 'Dental Harmoni',
+        logoUrl: 'https://en.dental-harmonia-tel-aviv.com/sites/S_JUFQLYEUVBG2HJKO6KIEHAQU3I/files/logodental2_1.png'
     },
 ]
 
@@ -28,7 +42,7 @@ const gLanguages = [
     },
 ]
 
-function getAllUsers() {
+function getAllMembers() {
     return gUsers
 }
 
@@ -39,7 +53,23 @@ function getLang(code) {
     return gLanguages.find(l => l.code === code)
 }
 
-function getUser(username) {
+function getMember(username) {
     const user = gUsers.find(u => u.username === username)
     if (user !== -1) return user
+}
+
+function getAllCompenies() {
+    return gCompanies
+}
+
+
+function makeId(length = 5) {
+    let text = "";
+    const possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for (var i = 0; i < length; i++) {
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+    }
+
+    return text;
 }

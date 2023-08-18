@@ -32,10 +32,23 @@ export const AppHeader = () => {
 
         <div className='dropdown-languages'>
           <button
-            className='language-drop-btn'
+            className='language-drop-btn flex align-center justify-center'
             onClick={() => setIsDropdown((prevState) => !prevState)}
           >
             {t('language_dropdown')}
+            <span className='dropdown-arrow'>
+              {isDropdown ? (
+                <img
+                  src='https://res.cloudinary.com/db9bey3ot/image/upload/v1692373166/upArrow_nx4ing.png'
+                  alt=''
+                />
+              ) : (
+                <img
+                  src='https://res.cloudinary.com/db9bey3ot/image/upload/v1692373166/arrowDown_o68pnx.png'
+                  alt=''
+                />
+              )}
+            </span>
           </button>
           <ul
             style={dropdownPos}
