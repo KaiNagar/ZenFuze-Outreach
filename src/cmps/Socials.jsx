@@ -19,13 +19,19 @@ export const Socials = () => {
         <a
           href='https://www.facebook.com/profile.php?id=100094671951857'
           target='_blank'
-          className='social-fb clear-link social'
-        ></a>
+          rel="noreferrer"
+          className='clear-link social'
+        >
+          <span className='social-fb'></span>
+        </a>
         <a
           href='https://www.instagram.com/zenfuze_outreach/'
           target='_blank'
-          className='social-ig clear-link social'
-        ></a>
+          rel="noreferrer"
+          className='clear-link social'
+        >
+          <span className='social-ig'></span>
+        </a>
       </div>
     </section>
   )

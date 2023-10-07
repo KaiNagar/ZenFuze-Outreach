@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import { useTranslation } from 'react-i18next'
-import { Link } from 'react-scroll'
+// import { useTranslation } from 'react-i18next'
+// import { Link } from 'react-scroll'
 import { zfoService } from '../services/zfo.service'
 import { QuestionsList } from './QuestionsList'
 
 export const QandA = () => {
   const [currQuestionId, setCurrQuestionId] = useState()
   const questions = zfoService.getQuestions()
-  const { t } = useTranslation()
+  // const { t } = useTranslation()
 
   const onToggleQuestion = (id) => {
     if (currQuestionId === id) return setCurrQuestionId(-1)

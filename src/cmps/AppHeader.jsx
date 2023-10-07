@@ -1,22 +1,22 @@
-import i18next from 'i18next'
+// import i18next from 'i18next'
 import Cookies from 'js-cookie'
-import { useEffect, useState } from 'react'
-import { useTranslation } from 'react-i18next'
+import { useEffect} from 'react'
+// import { useTranslation } from 'react-i18next'
 import { Link } from 'react-scroll'
 import { zfoService } from '../services/zfo.service'
 
 export const AppHeader = () => {
   const currentLangCode = Cookies.get('i18next') || 'en'
-  const languages = zfoService.getLanguages()
+  // const languages = zfoService.getLanguages()
   const currentLang = zfoService.getLang(currentLangCode)
-  const [forceUpdate, setForceUpdate] = useState(false)
-  const { t } = useTranslation()
+  // const [forceUpdate, setForceUpdate] = useState(false)
+  // const { t } = useTranslation()
 
-  const onChangeLang = (code) => {
-    i18next.changeLanguage(code)
-    Cookies.set('i18next', code)
-    setForceUpdate((prevState) => !prevState)
-  }
+  // const onChangeLang = (code) => {
+  //   i18next.changeLanguage(code)
+  //   Cookies.set('i18next', code)
+  //   setForceUpdate((prevState) => !prevState)
+  // }
 
   useEffect(() => {
     document.body.dir = currentLang.dir || 'ltr'
