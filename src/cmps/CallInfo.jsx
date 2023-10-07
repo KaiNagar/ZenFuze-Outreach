@@ -20,7 +20,7 @@ export const CallInfo = () => {
   if (!user) return 'Loading User'
 
   return (
-    <section className='call-info'>
+    <section className='call-info flex column '>
       <UserImg user={user} />
       <div className='call-info-sec-1'>
         <h4 className='call-info-sub-header'>

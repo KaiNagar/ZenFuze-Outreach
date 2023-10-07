@@ -1,0 +1,68 @@
+.qanda-container {
+  background-color: $clr-white;
+  padding: 1rem;
+  .qanda {
+    .qanda-header {
+      text-align: center;
+      font-size: rem(35px);
+      color: $clr-SDark;
+      font-family: montserrat-bold;
+    }
+    .questions-list {
+      margin-top: 2rem;
+    }
+    .questions-preview {
+      padding: 1.2rem;
+      border: 1px solid $clr-border;
+      border-radius: rem(4px);
+      margin-top: 0.5rem;
+      cursor: pointer;
+      &:hover {
+        border: 1px solid $clr-secondary;
+      }
+      &:last-of-type {
+        margin-bottom: 1rem;
+      }
+    }
+    .book-call-btn {
+      @include call-to-action-btn;
+      align-self: center;
+      margin-bottom: 0; ;
+    }
+    .title-header {
+      font-family: montserrat-bold;
+      font-size: rem(18px);
+    }
+    .down-arrow {
+      font-family: fa-solid;
+      &::before {
+        content: '\f107';
+      }
+    }
+    .up-arrow {
+      font-family: fa-solid;
+      &::before {
+          content: '\f106';
+        }
+    }
+    .dot{
+        font-family: fa-solid;
+        margin-right: 0.5rem;
+        margin-top: 0.1rem;
+        &::before{
+            content: '\f192';
+        }
+    }
+    .answer-tab {
+      margin-top: 1rem;
+    }
+    .show-btn {
+      margin-top: 2rem;
+      cursor: pointer;
+      font-family: montserrat-bold;
+      &:hover {
+        color: $clr-SDark;
+      }
+    }
+  }
+}

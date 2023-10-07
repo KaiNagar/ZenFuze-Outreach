@@ -1,0 +1,76 @@
+.social-media-marketing-container {
+  background-color: $clr-white;
+  padding: 1rem;
+  .social-media-marketing {
+    .smm-info {
+      width: 50%;
+      padding-right: 2rem;
+    }
+    li {
+      padding: 0.2rem;
+    }
+    span {
+      font-family: montserrat-bold;
+    }
+    .smm-header {
+      font-size: rem(30px);
+      font-family: montserrat-bold;
+      color: $clr-SDark;
+      margin-bottom: 0.8rem;
+    }
+    .smm-text,
+    .smm-text-2 {
+      font-size: rem(18px);
+      margin: 0;
+      padding: 0;
+    }
+    .ssm-img {
+      background-image: url('https://cdn.pixabay.com/photo/2020/07/25/19/44/laptop-5437663_960_720.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50%;
+      border-radius: rem(8px);
+    }
+  }
+}
+
+// mobile
+@media screen and (max-width: 1070px) {
+  .social-media-marketing-container {
+    .social-media-marketing {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+      .smm-header {
+        font-size: rem(30px);
+        margin-bottom: 0.8rem;
+      }
+      .smm-info {
+        width: 100%;
+        max-width: 400px;
+        padding-right: 0;
+      }
+      .ssm-img {
+        width: 100%;
+        max-width: 400px;
+        max-height: 400px;
+        height: 350px;
+        margin-bottom: 1rem;
+      }
+      li {
+        text-align: left;
+      }
+    }
+  }
+}
+// desktop
+@media screen and (min-width: 1070px) {
+  .social-media-marketing-container {
+    .social-media-marketing {
+    }
+    .ssm-img {
+      width: 50%;
+    }
+  }
+}

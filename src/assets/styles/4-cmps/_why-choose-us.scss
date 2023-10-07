@@ -1,0 +1,78 @@
+.why-choose-us-container {
+    padding: 1rem;
+  .why-choose-us {
+    color: $clr-white;
+    .why-container{
+        margin-top: 1rem;
+    }
+    .why-img {
+      // width: 50%;
+      background-image: url('https://freepngimg.com/thumb/marketing/63780-web-company,-business-viral-marketing-internet-agency.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .why-info {
+      // width: 50%;
+    }
+    .sec-header {
+      text-align: center;
+      font-family: montserrat-bold;
+      color: $clr-SDark;
+      font-size: rem(40px);
+    }
+    .sub-header,.sub-header-2 {
+    
+    }
+    li {
+      padding: 0.2rem;
+    }
+    span {
+      font-family: montserrat-bold;
+    }
+    .book-call-btn{
+      align-self: center;
+      margin-bottom: 0;
+    }
+  }
+}
+
+// mobile
+@media screen and (max-width: 1070px) {
+  .why-choose-us-container {
+    .why-container {
+      flex-direction: column-reverse;
+      align-items: center;
+      .why-img {
+        width: 100%;
+        max-width: 400px;
+        max-height: 400px;
+        height: 350px;
+        margin-top: 1rem;
+      }
+      .sec-header {
+        text-align: center;
+        font-size: rem(30px);
+      }
+      .why-info {
+        text-align: center;
+        max-width: 400px;
+        padding-left: 0;
+      }
+      li {
+        text-align: left;
+        font-size: rem(14px);
+      }
+    }
+  }
+}
+// desktop
+@media screen and (min-width: 1070px) {
+  .why-img {
+    width: 50%;
+  }
+  .why-info {
+    width: 50%;
+  }
+  
+}

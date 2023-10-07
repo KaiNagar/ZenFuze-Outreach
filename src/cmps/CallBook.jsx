@@ -10,9 +10,10 @@ export const CallBook = () => {
           textColor='#EAA159'
           color='#EAA159'
           styles={{
-            height: '1010px',
+            height: '1120px',
             width: '662px',
             boxShadow: '0 0 15px 5px #eaa15961',
+            overflow:'hidden !important'
           }}
         />
         <CallInfo />

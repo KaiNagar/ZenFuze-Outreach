@@ -1,8 +1,7 @@
-.app-header-constainer {
-  background-color: lightblue;
+.app-header-container {
+  background-color: $clr-MDark;
 
   .app-header {
-    background-color: $clr-MDark;
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
@@ -15,50 +14,11 @@
     .logo-outreach {
       font-family: montserrat-light;
     }
-    .dropdown-languages {
-      position: relative;
-    }
-    .language-drop-btn {
-      font-size: rem(18px);
-      color: $clr-white;
-      font-family: montserrat-bold;
-      background-color: $clr-secondary;
-      border-top-left-radius: rem(4px);
-      border-top-right-radius: rem(4px);
-      border: none;
-      border-bottom: 1px solid $clr-border;
-      min-width: 158.3px;
-      padding: 0 0.5rem;
-      &:hover {
-        opacity: 0.8;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-      }
-      .dropdown-arrow {
-        margin: 0 1rem;
-        padding-top: 0.4rem;
-        img {
-          width: 20px;
-        }
-      }
-    }
+
     ul {
-      position: absolute;
-      z-index: 1;
-      top: -500px;
       font-size: rem(18px);
-      background-color: $clr-secondary;
       padding: 0.5rem;
-      border-bottom-left-radius: rem(4px);
-      border-bottom-right-radius: rem(4px);
-      // min-width: 150px;
-      transition: all 0.4s;
-      &.open {
-        top: 2rem;
-        left: 0px;
-        // min-width: 150px;
-      }
-      .dropdown-item {
+      .lang-item {
         color: $clr-white;
         font-family: montserrat-bold;
         margin-top: 0.5rem;
@@ -68,8 +28,18 @@
         img {
           min-width: 40px;
           width: 40px;
+          height: 29px;
           margin: 0 1rem;
         }
+      }
+    }
+    .book-call-btn{
+      margin: 0;
+      font-size: rem(16px);
+      &:hover{
+        transform: none;
+        box-shadow:2px 2px 5px 0px rgba(234, 161, 89, 0.4392156863);
+        opacity: 0.95;
       }
     }
   }

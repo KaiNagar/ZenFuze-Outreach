@@ -1,0 +1,36 @@
+.copyright-footer-container {
+  background-color: $clr-white;
+  .copyright-footer {
+    text-align: center;
+    color: $clr-MDark;
+    .logo {
+      font-family: montserrat-bold;
+    }
+    .logo-outreach {
+      font-family: montserrat-light;
+    }
+  }
+}
+
+// mobile
+@media screen and (max-width: 1070px) {
+  .logo {
+    font-size: rem(26px);
+  }
+  h6,
+  .copy-rights {
+    font-size: rem(12px);
+    margin: 0.5rem;
+  }
+}
+// desktop
+@media screen and (min-width: 1070px) {
+  h6,
+  .copy-rights {
+    font-size: rem(16px);
+    margin: 0.5rem;
+  }
+  .logo {
+    font-size: rem(34px);
+  }
+}

@@ -1,9 +1,4 @@
 .our-offer-container {
-  background-image: url('https://res.cloudinary.com/db9bey3ot/image/upload/v1691231723/background_center_fwlhaz.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 2rem 0;
   color: $clr-white;
   .our-offer {
   }
@@ -81,7 +76,7 @@
   .offer-info {
     width: 50%;
 
-    padding: 3rem 0;
+    padding: 1rem;
     .book-call-btn {
       @include call-to-action-btn;
     }

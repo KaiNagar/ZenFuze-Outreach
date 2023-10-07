@@ -2,6 +2,7 @@
   font-size: rem(22px);
   font-family: montserrat-bold;
   color: $clr-SDark;
+  padding: 2rem;
   .the-team {
     .our-team-header {
       text-align: center;
@@ -13,12 +14,21 @@
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
   }
+ 
   .member-name-header {
     margin-top: 1rem;
   }
   .member-title-header {
     font-size: rem(16px);
-    font-family: montserrat-light;
-    color: $clr-black;
+    font-family: montserrat-regular;
+    color: $clr-white;
+    margin-top: 0.2rem;
+  }
+  .member-desc{
+    font-size: rem(14px);
+    color: $clr-white;
+    font-family:montserrat-light ;
+    max-width: 400px;
+    margin-top: 0.5rem;
   }
 }

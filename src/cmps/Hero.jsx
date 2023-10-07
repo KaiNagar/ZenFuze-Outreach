@@ -25,14 +25,14 @@ export const Hero = () => {
             </span>
           </Link>
         </div>
-        <div className='hero-img flex column align-center space-between'>
-          <img
-            src='https://res.cloudinary.com/db9bey3ot/image/upload/v1691152004/image-removebg-preview_1_kcp3g7.png'
+        <div className='hero-img flex column align-center justify-center'>
+          {/* <img
+            src='https://cdn.pixabay.com/photo/2020/09/17/18/05/people-5579977_960_720.png'
             alt='ZenFuze Logo'
-          />
-          <span className='logo'>
+          /> */}
+          {/* <span className='logo'>
             ZenFuze <span className='logo-outreach'>Outreach</span>
-          </span>
+          </span> */}
         </div>
       </div>
     </section>

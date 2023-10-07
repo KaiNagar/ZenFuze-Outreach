@@ -3,19 +3,24 @@ export const zfoService = {
     getMember,
     getLanguages,
     getLang,
-    getAllCompenies
+    getAllCompenies,
+    getQuestions
 }
 
 const gUsers = [
     {
+        id: makeId(),
         username: 'Kai Nagar',
         imgUrl: 'https://res.cloudinary.com/db9bey3ot/image/upload/v1691168226/ProfilePic_a8vnxo.jpg',
-        title: 'Founder'
+        title: 'Founder & Visionary',
+        desc: 'Meet Kai Nagar, the visionary behind ZenFuze Outreach. With a passion for helping businesses thrive in the digital age, Kai leads the charge with expertise and dedication.'
     },
     {
-        username: 'Adam Saya',
-        imgUrl: 'https://media.licdn.com/dms/image/C4D03AQGt-5QUsOUGKw/profile-displayphoto-shrink_800_800/0/1639257490935?e=1697673600&v=beta&t=e6c6jWL-woW5KcOtTuUkJvjlE4yH-t_l0U-ytXJSx0k',
-        title: 'Chief marketing officer'
+        id: makeId(),
+        username: 'Natasha Ablogin',
+        imgUrl: 'https://media.licdn.com/dms/image/D4D03AQEf9R07JWsyJg/profile-displayphoto-shrink_200_200/0/1689838333260?e=1701302400&v=beta&t=ym2JKB8dV0QFdZCCWbCo3QP01V_c0sY6vNlbN4UlbgY',
+        title: 'Media Buyer & Campaign Manager',
+        desc: 'Natasha Ablogin is our ace media buyer and campaign manager. With a keen eye for digital strategies and a commitment to delivering results, Natasha ensures your campaigns are optimized for success.'
     },
 ]
 
@@ -42,6 +47,25 @@ const gLanguages = [
     },
 ]
 
+const gQuestions = [
+    {
+        title:
+            'Why is having a strong social media presence essential for my business?',
+        id: makeId(),
+        answer:
+            "A strong social media presence is crucial because it enhances brand visibility, builds customer trust, and drives engagement. It can significantly impact your business's growth and revenue.",
+    },
+    { title: 'How can social media advertising benefit my business?', id: makeId(), answer: 'Social media advertising allows you to reach a highly targeted audience, increasing your chances of converting leads into customers. It\'s a cost-effective way to boost your brand and drive sales.' },
+    { title: 'What if I don\'t have any experience with social media marketing?', id: makeId(), answer: 'No worries! We specialize in working with businesses of all levels of experience. We\'ll guide you through the process, from creating a strategy to managing campaigns. We do it all for you!' },
+    { title: 'How can you help my business stand out on social media?', id: makeId(), answer: 'We develop unique and creative content strategies tailored to your brand. We also leverage data analytics to ensure your content resonates with your audience, making your business shine.' },
+    { title: 'What results can I expect from your social media services?', id: makeId(), answer: 'You can expect increased brand awareness, higher engagement rates, a growing online community, and, ultimately, improved sales and revenue.' },
+    { title: 'How does your free audit call work, and what can I gain from it?', id: makeId(), answer: 'Our free audit call allows us to understand your business and its needs better. During the call, we\'ll provide insights and strategies customized to your goals, giving you a clear path to success.' },
+    { title: 'Can I trust your agency with my business\'s social media presence?', id: makeId(), answer: 'Absolutely! Trust is at the core of our values. We prioritize ethical practices and transparency in every aspect of our work.' },
+    { title: 'What sets your agency apart from others in the industry?', id: makeId(), answer: 'Our unwavering commitment to your success sets us apart. We focus solely on paid advertising, ensuring that every dollar spent brings a return on investment.' },
+    { title: 'How quickly can I expect to see results from your services?', id: makeId(), answer: 'The timeline varies based on your specific goals and starting point, but our strategies are designed to show noticeable results within a reasonable time frame.' },
+    { title: 'How do I book a free audit call with your team?', id: makeId(), answer: 'Booking a call is easy! Simply scroll down here and find a suitable time slot on our calendar. We look forward to speaking with you and helping your business thrive.' },
+]
+
 function getAllMembers() {
     return gUsers
 }
@@ -51,6 +75,9 @@ function getLanguages() {
 }
 function getLang(code) {
     return gLanguages.find(l => l.code === code)
+}
+function getQuestions() {
+    return gQuestions
 }
 
 function getMember(username) {

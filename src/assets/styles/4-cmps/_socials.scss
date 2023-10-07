@@ -1,0 +1,63 @@
+.socials-container {
+  background-color: $clr-secondary;
+  padding: 1.4rem;
+  .socials {
+    font-size: rem(18px);
+    color: $clr-white;
+    flex-wrap: wrap;
+    .social-site {
+      .site-logo {
+        font-family: fa-solid;
+        margin-right: 0.5rem;
+        &::before {
+          content: '\f0ac';
+        }
+      }
+    }
+    .social-email {
+      .email-logo {
+        margin-right: 0.5rem;
+        font-family: fa-regular;
+        &::before {
+          content: '\f0e0';
+        }
+      }
+    }
+
+    .social-fb {
+      font-family: fa-brands;
+      font-size: rem(30px);
+      &::before {
+        content: '\f09a';
+      }
+    }
+    .social-ig {
+      font-family: fa-brands;
+      font-size: rem(30px);
+      &::before {
+        content: '\f16d';
+      }
+    }
+    .social {
+      padding: 0.2rem;
+      margin: 0.2rem;
+    }
+  }
+}
+
+// mobile
+@media screen and (max-width: 1070px) {
+  .socials {
+    justify-content: center;
+  }
+  .social {
+    text-align: center;
+    justify-self: center;
+  }
+}
+// desktop
+@media screen and (min-width: 1070px) {
+  .socials {
+    justify-content: space-between;
+  }
+}
