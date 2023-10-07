@@ -6,7 +6,7 @@ export const Socials = () => {
           <span className='site-logo'></span>Site:{' '}
           <a
             className='clear-link'
-            href='www.zenfuzeoutreach.com'
+            href='https://zenfuzeoutreach.com/'
             target='_blank'
           >
             www.zenfuzeoutreach.com
