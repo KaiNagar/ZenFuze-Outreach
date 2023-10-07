@@ -8,6 +8,7 @@ export const Socials = () => {
             className='clear-link'
             href='https://zenfuzeoutreach.com/'
             target='_blank'
+            rel="noreferrer"
           >
             www.zenfuzeoutreach.com
           </a>
