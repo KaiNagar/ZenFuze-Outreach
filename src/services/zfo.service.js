@@ -50,21 +50,22 @@ const gLanguages = [
 const gQuestions = [
     {
         title:
-            'Why is having a strong social media presence essential for my business?',
+            'Why is having a strong social media presence essential for my real estate business?',
         id: makeId(),
         answer:
-            "A strong social media presence is crucial because it enhances brand visibility, builds customer trust, and drives engagement. It can significantly impact your business's growth and revenue.",
+            "A strong social media presence is crucial for real estate agents because it enhances brand visibility, builds customer trust, and drives engagement. It can significantly impact your business's growth and revenue.",
     },
-    { title: 'How can social media advertising benefit my business?', id: makeId(), answer: 'Social media advertising allows you to reach a highly targeted audience, increasing your chances of converting leads into customers. It\'s a cost-effective way to boost your brand and drive sales.' },
-    { title: 'What if I don\'t have any experience with social media marketing?', id: makeId(), answer: 'No worries! We specialize in working with businesses of all levels of experience. We\'ll guide you through the process, from creating a strategy to managing campaigns. We do it all for you!' },
-    { title: 'How can you help my business stand out on social media?', id: makeId(), answer: 'We develop unique and creative content strategies tailored to your brand. We also leverage data analytics to ensure your content resonates with your audience, making your business shine.' },
-    { title: 'What results can I expect from your social media services?', id: makeId(), answer: 'You can expect increased brand awareness, higher engagement rates, a growing online community, and, ultimately, improved sales and revenue.' },
-    { title: 'How does your free audit call work, and what can I gain from it?', id: makeId(), answer: 'Our free audit call allows us to understand your business and its needs better. During the call, we\'ll provide insights and strategies customized to your goals, giving you a clear path to success.' },
-    { title: 'Can I trust your agency with my business\'s social media presence?', id: makeId(), answer: 'Absolutely! Trust is at the core of our values. We prioritize ethical practices and transparency in every aspect of our work.' },
-    { title: 'What sets your agency apart from others in the industry?', id: makeId(), answer: 'Our unwavering commitment to your success sets us apart. We focus solely on paid advertising, ensuring that every dollar spent brings a return on investment.' },
-    { title: 'How quickly can I expect to see results from your services?', id: makeId(), answer: 'The timeline varies based on your specific goals and starting point, but our strategies are designed to show noticeable results within a reasonable time frame.' },
-    { title: 'How do I book a free audit call with your team?', id: makeId(), answer: 'Booking a call is easy! Simply scroll down here and find a suitable time slot on our calendar. We look forward to speaking with you and helping your business thrive.' },
-]
+    { title: 'How can social media advertising benefit my real estate business?', id: makeId(), answer: 'Social media advertising allows real estate agents to reach a highly targeted audience, increasing the chances of converting leads into clients. It\'s a cost-effective way to boost brand awareness and drive sales.' },
+    { title: 'What if I don\'t have any experience with social media marketing?', id: makeId(), answer: 'No worries! We specialize in working with real estate agents of all levels of experience. We\'ll guide you through the process, from creating a strategy to managing campaigns. We do it all for you!' },
+    { title: 'How can you help my real estate business stand out on social media?', id: makeId(), answer: 'We develop unique and creative content strategies tailored to your brand as a real estate agent. We also leverage data analytics to ensure your content resonates with your audience, making your business stand out in the competitive real estate market.' },
+    { title: 'What results can I expect from your social media services?', id: makeId(), answer: 'You can expect increased brand awareness, higher engagement rates, a growing online community, and, ultimately, improved leads and conversions for your real estate business.' },
+    { title: 'How does your free discovery call work, and what can I gain from it?', id: makeId(), answer: 'Our free discovery call allows us to understand your real estate business and its needs better. During the call, we\'ll provide insights and strategies customized to your goals, giving you a clear path to success in the real estate market.' },
+    { title: 'Can I trust your agency with my real estate business\'s social media presence?', id: makeId(), answer: 'Absolutely! Trust is at the core of our values. We prioritize ethical practices and transparency in every aspect of our work, ensuring your real estate business\'s online reputation is in good hands.' },
+    { title: 'What sets your agency apart from others in the real estate industry?', id: makeId(), answer: 'Our unwavering commitment to your success as a real estate agent sets us apart. We focus solely on paid advertising for real estate, ensuring that every dollar spent brings a return on investment. With our expertise and dedication, your real estate business will thrive in today\'s digital landscape.' },
+    { title: 'How quickly can I expect to see results from your services?', id: makeId(), answer: 'The timeline for seeing results from our services varies based on your specific goals and starting point, but our strategies are designed to show noticeable improvements in your real estate business within a reasonable time frame.' },
+    { title: 'How do I book a free discovery call with your team?', id: makeId(), answer: 'Booking a call is easy! Simply scroll down here and find a suitable time slot on our calendar. We look forward to speaking with you and helping your real estate business thrive.' },
+];
+
 
 function getAllMembers() {
     return gUsers

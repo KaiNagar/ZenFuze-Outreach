@@ -35,7 +35,7 @@ export const AppHeader = () => {
           offset={0}
           duration={200}
         >
-          <span className='btn-big-text'>Book FREE Audit Call</span>
+          <span className='btn-big-text'>Book FREE Discovery Call</span>
         </Link>
 
         {/* <ul className='clean-list flex'>

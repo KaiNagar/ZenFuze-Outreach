@@ -65,7 +65,7 @@ export const CallInfo = () => {
             <span className='highlighted'>
               {t('call_info_sec_2_list_point_3_highlighted')}
             </span>
-            {t('call_info_sec_2_list_point_3_rest')}
+            {/* {t('call_info_sec_2_list_point_3_rest')} */}
           </li>
           <li>
             <img
