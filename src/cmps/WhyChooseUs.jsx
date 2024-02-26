@@ -12,28 +12,28 @@ export const WhyChooseUs = () => {
           <div className='why-img'></div>
           <div className='why-info'>
             <h4 className='sub-header'>
-              At ZenFuze Outreach, we're committed to your success. Here's why partnering with us is the smart choice:
+            When it comes to your real estate success, partnering with us offers unique advantages:
             </h4>
             <ul>
-              <li>
-                <span className="highlight">Personalized Support:</span> Benefit from weekly Zoom calls for open and transparent communication, ensuring your needs are met promptly.
-              </li>
-              <li>
-                <span className="highlight">Real-Time Updates:</span> Stay informed with weekly updates via Loom videos or messages, keeping you confident in our progress.
-              </li>
-              <li>
-                <span className="highlight">Live Campaign Dashboard:</span> Access our live campaign dashboard 24/7 to track performance and gain valuable insights anytime, anywhere.
-              </li>
-              <li>
-                <span className="highlight">Client-Centric Approach:</span> Your success is our priority. We align our efforts with your goals and are dedicated to helping you achieve them.
-              </li>
-              <li>
-                <span className="highlight">Passion for Success:</span> Our team is driven by your success. We're passionate about helping real estate agents reach their goals and thrive in the market.
-              </li>
-            </ul>
-            <h4 className='sub-header-2'>
-              Choosing ZenFuze Outreach means choosing a partner dedicated to your growth, keeping you informed, and passionate about your success.
-            </h4>
+          <li>
+            <span className="highlight">Personalized Support:</span> Experience personalized support through regular consultations, ensuring your needs are addressed effectively.
+          </li>
+          <li>
+            <span className="highlight">Real-Time Updates:</span> Stay updated with real-time progress reports via video updates or messages, keeping you informed every step of the way.
+          </li>
+          <li>
+            <span className="highlight">Live Campaign Dashboard:</span> Access our live campaign dashboard anytime to monitor campaign performance and gain actionable insights to enhance your real estate strategies.
+          </li>
+          <li>
+            <span className="highlight">Client-Centric Approach:</span> Your real estate goals are our top priority. We tailor our services to align with your objectives and are committed to helping you achieve success in the competitive market.
+          </li>
+          <li>
+            <span className="highlight">Passion for Success:</span> Our dedicated team is passionate about your real estate success. We are driven to help real estate agents like you thrive and excel in the dynamic real estate industry.
+          </li>
+        </ul>
+        <h4 className='sub-header-2'>
+          By choosing to partner with us, you're choosing a dedicated ally committed to your real estate growth, providing timely updates, and sharing your passion for success in the real estate market.
+        </h4>
           </div>
         </div>
         <Link
